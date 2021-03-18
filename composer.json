@@ -1,0 +1,44 @@
+{
+    "name": "schematikio/signal-cli",
+    "description": "Signal CLI",
+    "authors": [
+        {
+            "name": "Zack Warren",
+            "email": "zack@schematik.io"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel-zero/framework": "^8.0",
+        "nunomaduro/laravel-console-menu": "^3.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3.1",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php application app:rename"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": [
+        "signal"
+    ]
+}

@@ -1,0 +1,9 @@
+@extends('global.app')
+
+@section('content')
+	@loop
+    {{-- --}}
+	@endloop
+
+	{!! UIKitPagination() !!}
+@endsection

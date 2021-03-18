@@ -1,0 +1,11 @@
+{{--
+  Template Name: {pageName}
+--}}
+
+@extends('global.app')
+
+@section('content')
+	@loop
+    {{-- --}}
+ 	@endloop
+@endsection

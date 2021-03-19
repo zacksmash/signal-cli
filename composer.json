@@ -1,12 +1,6 @@
 {
-    "name": "schematikio/signal-cli",
+    "name": "zacksmash/signal-cli",
     "description": "Signal CLI",
-    "authors": [
-        {
-            "name": "Zack Warren",
-            "email": "zack@schematik.io"
-        }
-    ],
     "require": {
         "php": "^7.4|^8.0",
         "laravel-zero/framework": "^8.0",
